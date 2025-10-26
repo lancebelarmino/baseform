@@ -19,7 +19,7 @@
 #define HRM_R(k1, k2, k3, k4) &htr LGUI k1  &htr LSHIFT k2 &htr RALT k3   &htr LCTRL k4
 #define TBL_1 &mo MOUSE
 #define TBL_2 &lt NAV ESC
-#define TBL_3 &mt LC(LALT) SPACE
+#define TBL_3 &mt LALT SPACE
 #define TBR_1 &lt FUN RET
 #define TBR_2 &mo SYM 
 #define TBR_3 &kp CAPS
