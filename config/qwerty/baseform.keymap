@@ -151,19 +151,19 @@
         combo_xc {
             timeout-ms = <50>;
             key-positions = <38 39>;  // X C
-            bindings = <&kp MR_C>;
+            bindings = <&kp MR_CPY>;
         };
         
         combo_cv {
             timeout-ms = <50>;
             key-positions = <39 40>;  // C V
-            bindings = <&kp MR_X>;
+            bindings = <&kp MR_CUT>;
         };
         
         combo_xv {
             timeout-ms = <50>;
             key-positions = <38 40>;  // X V
-            bindings = <&kp MR_V>;
+            bindings = <&kp MR_PST>;
         };
         
         // Right hand combos
