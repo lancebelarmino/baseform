@@ -19,7 +19,7 @@
 #define HRM_R(k1, k2, k3, k4) &htr LGUI k1  &htr LSHIFT k2 &htr RALT k3   &htr LCTRL k4
 #define TBL_1 &mo MSE
 #define TBL_2 &lt NAV ESC
-#define TBL_3 &mt LALT SPACE
+#define TBL_3 &mt LC(LALT) SPACE
 #define TBR_1 &lt FUN RET
 #define TBR_2 &mo SYM 
 #define TBR_3 &kp CAPS
@@ -187,13 +187,13 @@
         //                                    &trans     &none      &trans       &trans     &trans    &trans
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            XXXXXX     ______     ______     ______     ______     ______         XXXXXX     ______     ______     ______     ______     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            XXXXXX     XXXXXX     XXXXXX     &kp LBRC   &kp RBRC   XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     &kp EQUAL  XXXXXX     XXXXXX     XXXXXX     ______
+            ______     XXXXXX     &kp TILDE2 &kp LPAR   &kp RPAR   XXXXXX         XXXXXX     &kp EQUAL  &kp PLUS   &kp MINUS  &kp COLN   ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     ______     ______     ______     XXXXXX
+            XXXXXX     XXXXXX     XXXXXX     &kp LBKT   &kp RBKT   XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -206,11 +206,11 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            XXXXXX     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp N0     &kp N4     &kp N5     &kp N6     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            ______     &kp N0     &kp N4     &kp N5     &kp N6     XXXXXX         XXXXXX     &kp EQUAL  &kp PLUS   &kp MINUS  &kp COLN   ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            XXXXXX     XXXXXX     &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
