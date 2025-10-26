@@ -24,10 +24,10 @@
 #define TBR_1 &lt FUN RET
 #define TBR_2 &mo SYM 
 #define TBR_3 &kp CAPS
-#define SCRL_UP &msc SCRL_UP
-#define SCRL_DOWN &msc SCRL_DOWN
-#define SCRL_LEFT &msc SCRL_LEFT
-#define SCRL_RIGHT &msc SCRL_RIGHT
+#define MSC_UP &msc SCRL_UP
+#define MSC_DOWN &msc SCRL_DOWN
+#define MSC_LEFT &msc SCRL_LEFT
+#define MSC_RIGHT &msc SCRL_RIGHT
 
 #define MR_RT LA(LG(R)) // Reload Tab
 #define MR_CT LG(W) // Close Tab
@@ -264,7 +264,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         XXXXXX     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp MR_RT  &kp MR_MC  &kp MR_MCP &kp MR_MCN XXXXXX         XXXXXX     SCRL_LEFT  SCRL_DOWN  SCRL_UP    SCRL_RIGHT ______
+            ______     &kp MR_RT  &kp MR_MC  &kp MR_MCP &kp MR_MCN XXXXXX         XXXXXX     MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
