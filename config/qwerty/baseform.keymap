@@ -24,15 +24,20 @@
 #define TBR_2 &mo SYM 
 #define TBR_3 &kp CAPS
 
-#define MR_RT LA(LG(T))
-#define MR_CT LG(W)
-#define MR_PRT LA(LG(LEFT))      // Alt+Cmd+Left
-#define MR_NXT LA(LG(RIGHT))     // Alt+Cmd+Right
-#define MR_RLD LS(LG(R))         // Cmd+Shift+R
-#define MR_BST LC(TAB)           // Ctrl+Tab
-#define MR_ZI LG(PLUS)        // Cmd++ (Zoom in)
-#define MR_ZO LG(MINUS)          // Cmd+- (Zoom out)
-#define MR_SC LS(LG(2))          // Cmd+Shift+2 (Screenshot)
+#define MR_RT LA(LG(T)) // Reload Tab
+#define MR_CT LG(W) // Close Tab
+#define MR_PRT LA(LG(LEFT)) // Previous Tab
+#define MR_NXT LA(LG(RIGHT)) // Next Tab
+#define MR_RLD LS(LG(R)) // Re-open Tab
+#define MR_ZI LG(PLUS) // Zoom in
+#define MR_ZO LG(MINUS) // Zoom out
+#define MR_SC LS(LG(2)) // Screenshot
+#define MR_UN LG(Z) // Undo
+#define MR_RD LS(LG(Z)) // Redo
+#define MR_F LG(F) // Find
+#define MR_CPY LG(C) // Copy
+#define MR_CUT LG(X) // Cut
+#define MR_PST LG(V) // Paste
 
 &lt {
   tapping-term-ms = <160>;
@@ -96,6 +101,126 @@
       hold-trigger-on-release;
     };
   };
+
+  combos {
+        compatible = "zmk,combos";
+        
+        // Left hand combos
+        combo_we {
+            timeout-ms = <50>;
+            key-positions = <14 15>;  // W E
+            bindings = <&kp MR_UN>;
+        };
+        
+        combo_er {
+            timeout-ms = <50>;
+            key-positions = <15 16>;  // E R
+            bindings = <&kp MR_RD>;
+        };
+        
+        combo_wr {
+            timeout-ms = <50>;
+            key-positions = <14 16>;  // W R
+            bindings = <&kp MR_F>;
+        };
+        
+        // combo_as {
+        //     timeout-ms = <50>;
+        //     key-positions = <25 26>;  // A S
+        //     bindings = <&kp F3>;
+        // };
+        
+        combo_sd {
+            timeout-ms = <50>;
+            key-positions = <26 27>;  // S D
+            bindings = <&kp BSPC>;
+        };
+        
+        combo_df {
+            timeout-ms = <50>;
+            key-positions = <27 28>;  // D F
+            bindings = <&kp RET>;
+        };
+        
+        combo_sf {
+            timeout-ms = <50>;
+            key-positions = <26 28>;  // S F
+            bindings = <&kp F3>;
+        };
+        
+        combo_xc {
+            timeout-ms = <50>;
+            key-positions = <38 39>;  // X C
+            bindings = <&kp MR_C>;
+        };
+        
+        combo_cv {
+            timeout-ms = <50>;
+            key-positions = <39 40>;  // C V
+            bindings = <&kp MR_X>;
+        };
+        
+        combo_xv {
+            timeout-ms = <50>;
+            key-positions = <38 40>;  // X V
+            bindings = <&kp MR_V>;
+        };
+        
+        // Right hand combos
+        combo_ui {
+            timeout-ms = <50>;
+            key-positions = <19 20>;  // U I
+            bindings = <&kp UNDER>;
+        };
+        
+        combo_io {
+            timeout-ms = <50>;
+            key-positions = <20 21>;  // I O
+            bindings = <&kp DLLR>;
+        };
+        
+        combo_uo {
+            timeout-ms = <50>;
+            key-positions = <19 21>;  // U O
+            bindings = <&kp AT>;
+        };
+        
+        combo_jk {
+            timeout-ms = <50>;
+            key-positions = <31 32>;  // J K
+            bindings = <&kp LEFT>;
+        };
+        
+        combo_kl {
+            timeout-ms = <50>;
+            key-positions = <32 33>;  // K L
+            bindings = <&kp RIGHT>;
+        };
+        
+        combo_jl {
+            timeout-ms = <50>;
+            key-positions = <31 33>;  // J L
+            bindings = <&kp COLON>;
+        };
+        
+        combo_mcomm {
+            timeout-ms = <50>;
+            key-positions = <43 44>;  // M COMMA
+            bindings = <&kp HASH>;
+        };
+        
+        combo_commdot {
+            timeout-ms = <50>;
+            key-positions = <44 45>;  // COMMA DOT
+            bindings = <&kp STAR>;
+        };
+        
+        combo_mdot {
+            timeout-ms = <50>;
+            key-positions = <43 45>;  // M DOT
+            bindings = <&kp PIPE>;
+        };
+    };
 
   keymap {
     compatible = "zmk,keymap";
