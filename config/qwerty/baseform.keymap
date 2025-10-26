@@ -24,6 +24,17 @@
 #define TBR_2 &mo SYM 
 #define TBR_3 &kp CAPS
 
+#define MR_RT LA(LG(T))
+#define MR_CT LG(KC_W)
+#define MR_PRT LA(LG(LEFT))      // Alt+Cmd+Left
+#define MR_NXT LA(LG(RIGHT))     // Alt+Cmd+Right
+#define MR_RLD LS(LG(R))         // Cmd+Shift+R
+#define MR_BST LC(TAB)           // Ctrl+Tab
+#define MR_ZI LG(KP_PLUS)        // Cmd++ (Zoom in)
+#define MR_ZO LG(MINUS)          // Cmd+- (Zoom out)
+#define MR_SC LSG(N2)            // Cmd+Shift+2 (Screenshot)
+#define MR_RCA RC(RALT)          // Right Ctrl+Right Alt (hold both)
+
 &lt {
   tapping-term-ms = <160>;
   quick_tap_ms = <160>;
@@ -102,7 +113,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             XXXXXX     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp DEL
+            MR_SC      &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp TAB    HRM_L(A,   S,         D,         F)         &kp G          &kp H      HRM_R(J,   K,         L,         APOS)      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -117,13 +128,13 @@
       display-name = "mouse";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
-        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+        //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -140,13 +151,13 @@
         //                                 &kp EQUAL &kp N0  &kp FSLH        &trans     &none      &trans
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     &kp MR_RT  &kp MR_CT  &kp MR_PRT &kp MR_NXT &kp MR_RLD     XXXXXX     MR_ZO      XXXXXX     MR_ZI      XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -164,13 +175,13 @@
 
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     &kp F1     &kp F2     &kp F3     &kp F4     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     &kp F1     &kp F2     &kp F3     &kp F4     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp F5     &kp F6     &kp F7     &kp F8     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     &kp F9     &kp F10    &kp F11    &kp F12    XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     &kp F9     &kp F10    &kp F11    &kp F12    XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -187,13 +198,13 @@
         //                                    &trans     &none      &trans       &trans     &trans    &trans
 
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     ______     ______     ______     ______     ______         XXXXXX     ______     ______     ______     ______     XXXXXX
+            ______     ______     ______     ______     ______     ______         ______     ______     ______     ______     ______     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     &kp LBRC   &kp RBRC   XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  XXXXXX
+            ______     XXXXXX     XXXXXX     &kp LBRC   &kp RBRC   XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     XXXXXX     &kp TILDE2 &kp LPAR   &kp RPAR   XXXXXX         XXXXXX     &kp EQUAL  &kp PLUS   &kp MINUS  &kp COLN   ______
+            ______     HRM_L(BSLH,TILDE,     LPAR,      RPAR)      XXXXXX         XXXXXX     HRM_R(EQUAL,PLUS,     MINUS,     COLN)      ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     XXXXXX     &kp LBKT   &kp RBKT   XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     XXXXXX
+            ______     XXXXXX     XXXXXX     &kp LBKT   &kp RBKT   XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -204,13 +215,13 @@
       display-name = "numbers";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
+            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  XXXXXX
+            ______     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp AMPS   &kp PRCNT  &kp CARET  ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp N0     &kp N4     &kp N5     &kp N6     XXXXXX         XXXXXX     &kp EQUAL  &kp PLUS   &kp MINUS  &kp COLN   ______
+            ______     HRM_L(N0,  N4,        N5,        N6)        XXXXXX         XXXXXX     HRM_R(EQUAL,PLUS,     MINUS,     COLN)      ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     XXXXXX     &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     XXXXXX
+            ______     XXXXXX     &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp GRAVE  ______     ______     ______     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
