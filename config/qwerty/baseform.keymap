@@ -25,15 +25,14 @@
 #define TBR_3 &kp CAPS
 
 #define MR_RT LA(LG(T))
-#define MR_CT LG(KC_W)
+#define MR_CT LG(W)
 #define MR_PRT LA(LG(LEFT))      // Alt+Cmd+Left
 #define MR_NXT LA(LG(RIGHT))     // Alt+Cmd+Right
 #define MR_RLD LS(LG(R))         // Cmd+Shift+R
 #define MR_BST LC(TAB)           // Ctrl+Tab
-#define MR_ZI LG(KP_PLUS)        // Cmd++ (Zoom in)
+#define MR_ZI LG(PLUS)        // Cmd++ (Zoom in)
 #define MR_ZO LG(MINUS)          // Cmd+- (Zoom out)
 #define MR_SC LS(LG(2))          // Cmd+Shift+2 (Screenshot)
-#define MR_RCA RC(RALT)          // Right Ctrl+Right Alt (hold both)
 
 &lt {
   tapping-term-ms = <160>;
