@@ -32,7 +32,7 @@
 #define MR_BST LC(TAB)           // Ctrl+Tab
 #define MR_ZI LG(KP_PLUS)        // Cmd++ (Zoom in)
 #define MR_ZO LG(MINUS)          // Cmd+- (Zoom out)
-#define MR_SC LSG(N2)            // Cmd+Shift+2 (Screenshot)
+#define MR_SC LS(LG(2))          // Cmd+Shift+2 (Screenshot)
 #define MR_RCA RC(RALT)          // Right Ctrl+Right Alt (hold both)
 
 &lt {
