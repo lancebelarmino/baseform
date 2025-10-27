@@ -21,9 +21,9 @@
 #define TBL_1 &key_repeat
 #define TBL_2 &lt NAV ESC
 #define TBL_3 &mt LC(LALT) SPACE
-#define TBR_1 &lt FUN RET
+#define TBR_1 &lt NUM RET
 #define TBR_2 &mo SYM 
-#define TBR_3 &lt NUM CAPS
+#define TBR_3 &lt FUN CAPS
 #define MSC_UP &msc SCRL_UP
 #define MSC_DOWN &msc SCRL_DOWN
 #define MSC_LEFT &msc SCRL_LEFT
