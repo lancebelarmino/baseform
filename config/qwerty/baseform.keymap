@@ -29,7 +29,7 @@
 #define MSC_LEFT &msc SCRL_LEFT
 #define MSC_RIGHT &msc SCRL_RIGHT
 
-#define MR_RT LA(LG(R)) // Reload Tab
+#define MR_RT LS(LG(R)) // Reload Tab
 #define MR_CT LG(W) // Close Tab
 #define MR_PRT LA(LG(LEFT)) // Previous Tab
 #define MR_NXT LA(LG(RIGHT)) // Next Tab
@@ -222,7 +222,7 @@
     compatible = "zmk,keymap";
 
     base {
-      display-name = "base";
+      display-name = "Base";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp MR_SDK &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MR_LCK
@@ -256,7 +256,7 @@
     };
 
     navigation {
-      display-name = "navigate";
+      display-name = "Nav";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
@@ -273,7 +273,7 @@
     };
 
     function {
-      display-name = "function";
+      display-name = "Func";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
@@ -290,7 +290,7 @@
     };
 
     symbols {	
-      display-name = "symbols";
+      display-name = "Sym";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             ______     ______     ______     ______     ______     ______         ______     ______     ______     ______     ______     ______
