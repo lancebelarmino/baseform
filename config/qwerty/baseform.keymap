@@ -49,6 +49,7 @@
 #define MR_MC LC(LA(P)) // Mission Control
 #define MR_MCP LC(LA(J)) // Move Previous Window
 #define MR_MCN LC(LA(K)) // Move Next Window
+#define MR_SA LG(GRAVE) // Switch App
 
 &lt {
   tapping-term-ms = <160>;
@@ -262,7 +263,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp MR_ROT &kp MR_CT  &kp MR_PRT &kp MR_NXT XXXXXX         XXXXXX     &kp MR_ZO  XXXXXX     &kp MR_ZI  XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         XXXXXX     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  ______
+            ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   &kp MR_EMJ     XXXXXX     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp MR_RT  &kp MR_MC  &kp MR_MCP &kp MR_MCN XXXXXX         XXXXXX     MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
@@ -287,7 +288,7 @@
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
       >;
     };
-
+|#*_$@
     symbols {	
       display-name = "symbols";
       bindings = <
