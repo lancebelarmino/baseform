@@ -217,13 +217,13 @@
       bindings = <&kp PIPE>;
     };
 
-    combo_jk {
+    combo_ji {
       timeout-ms = <50>;
       key-positions = <31 20>;  // J I
       bindings = <&kp LEFT>;
     };
 
-    combo_jk {
+    combo_il {
       timeout-ms = <50>;
       key-positions = <20 33>;  // I L
       bindings = <&kp RIGHT>;
