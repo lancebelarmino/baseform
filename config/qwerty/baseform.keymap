@@ -169,6 +169,30 @@
       key-positions = <38 40>;  // X V
       bindings = <&kp MR_PST>;
     };
+
+    combo_se {
+      timeout-ms = <50>;
+      key-positions = <26 15>;  // S E
+      bindings = <&kp MR_RT>;
+    };
+
+    combo_ef {
+      timeout-ms = <50>;
+      key-positions = <15 28>;  // E F
+      bindings = <&kp F3>;
+    };
+
+    combo_xd {
+      timeout-ms = <50>;
+      key-positions = <38 27>;  // X D
+      bindings = <&kp MR_SA>;
+    };
+
+    combo_dv {
+      timeout-ms = <50>;
+      key-positions = <27 40>;  // D V
+      bindings = <&kp MR_SC>;
+    };
     
     // Right hand combos
     combo_ui {
@@ -222,7 +246,7 @@
     combo_mdot {
       timeout-ms = <50>;
       key-positions = <43 45>;  // M DOT
-      bindings = <&kp PIPE>;
+      bindings = <&kp SEMI>;
     };
 
     combo_ji {
@@ -236,6 +260,18 @@
       key-positions = <20 33>;  // I L
       bindings = <&kp RIGHT>;
     };
+
+    combo_mk {
+      timeout-ms = <50>;
+      key-positions = <43 32>;  // M K
+      bindings = <&kp AMPS>;
+    };
+
+    combo_kdot {
+      timeout-ms = <50>;
+      key-positions = <32 45>;  // K DOT
+      bindings = <&kp PIPE>;
+    };
   };
 
   keymap {
@@ -245,13 +281,13 @@
       display-name = "Base";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            &kp MR_SDK &kp N1     &kp N2     &kp N3     &kp N4     &kp N5         &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MR_LCK
+            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp MR_SC  &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      &kp DEL
+            XXXXXX     &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P      XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp MR_RT  HRM_L(A,   S,         D,         F)         &kp G          &kp H      HRM_R(J,   K,         L,         SEMI)      &kp BSPC
+            XXXXXX     HRM_L(A,   S,         D,         F)         &kp G          &kp H      HRM_R(J,   K,         L,         BSPC)      XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp F3     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH  &kp F12
+            XXXXXX     &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SLASH  XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              TBL_1      TBL_2      TBL_3          TBR_1      TBR_2      TBR_3
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -283,9 +319,9 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp MR_ROT &kp MR_CT  &kp MR_PRT &kp MR_NXT XXXXXX         XXXXXX     &kp MR_ZO  XXXXXX     &kp MR_ZI  XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   &kp MR_EMJ     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  XXXXXX     ______
+            ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SA  XXXXXX         MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     ______
+            ______     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SDK XXXXXX         MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -300,7 +336,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp F1     &kp F2     &kp F3     &kp F4     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp F5     &kp F6     &kp F7     &kp F8     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            ______     &kp F5     &kp F6     &kp F7     &kp F8     XXXXXX         XXXXXX     &kp MR_EMJ XXXXXX     XXXXXX     &kp MR_LCK ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     &kp F9     &kp F10    &kp F11    &kp F12    XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
@@ -315,11 +351,11 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
             ______     ______     ______     ______     ______     ______         ______     ______     ______     ______     ______     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         &kp TILD   &kp EXCL  &kp LBRC   &kp RBRC   &kp CARET   ______
+            ______     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp LBRC   &kp RBRC   &kp CARET   ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             ______     HRM_L(N0,  N4,        N5,        N6)        &kp AT         &kp PLUS   HRM_R(EQUAL,LPAR,     RPAR,      MINUS)     ______
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp LT     &kp N7     &kp N8     &kp N9     &kp GT         &kp PRCNT  &kp AMPS   &kp LBKT   &kp RBKT   &kp BSLH   ______
+            ______     &kp TILD   &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp PRCNT  &kp LBKT   &kp RBKT   &kp BSLH   ______
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
