@@ -134,6 +134,12 @@
       key-positions = <14 16>;  // W R
       bindings = <&kp MR_F>;
     };
+
+    combo_sd {
+      timeout-ms = <50>;
+      key-positions = <25 26>;  // A S
+      bindings = <&kp MR_SA>;
+    };
     
     combo_sd {
       timeout-ms = <50>;
@@ -174,13 +180,13 @@
     combo_se {
       timeout-ms = <50>;
       key-positions = <26 15>;  // S E
-      bindings = <&kp MR_SA>;
+      bindings = <&kp MR_RT>;
     };
 
     combo_ef {
       timeout-ms = <50>;
       key-positions = <15 28>;  // E F
-      bindings = <&kp MR_RT>;
+      bindings = <&kp MR_SC>;
     };
 
     combo_xd {
@@ -192,7 +198,7 @@
     combo_dv {
       timeout-ms = <50>;
       key-positions = <27 40>;  // D V
-      bindings = <&kp MR_SC>;
+      bindings = <&kp F12>;
     };
     
     // Right hand combos
