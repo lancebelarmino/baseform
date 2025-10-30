@@ -173,19 +173,19 @@
     combo_se {
       timeout-ms = <50>;
       key-positions = <26 15>;  // S E
-      bindings = <&kp MR_RT>;
+      bindings = <&kp MR_SA>;
     };
 
     combo_ef {
       timeout-ms = <50>;
       key-positions = <15 28>;  // E F
-      bindings = <&kp F3>;
+      bindings = <&kp MR_RT>;
     };
 
     combo_xd {
       timeout-ms = <50>;
       key-positions = <38 27>;  // X D
-      bindings = <&kp MR_SA>;
+      bindings = <&kp F3>;
     };
 
     combo_dv {
@@ -252,25 +252,25 @@
     combo_ji {
       timeout-ms = <50>;
       key-positions = <31 20>;  // J I
-      bindings = <&kp LEFT>;
+      bindings = <&kp AMPS>;
     };
 
     combo_il {
       timeout-ms = <50>;
       key-positions = <20 33>;  // I L
-      bindings = <&kp RIGHT>;
+      bindings = <&kp PIPE>;
     };
 
     combo_mk {
       timeout-ms = <50>;
       key-positions = <43 32>;  // M K
-      bindings = <&kp AMPS>;
+      bindings = <&kp LEFT>;
     };
 
     combo_kdot {
       timeout-ms = <50>;
       key-positions = <32 45>;  // K DOT
-      bindings = <&kp PIPE>;
+      bindings = <&kp RIGHT>;
     };
   };
 
@@ -315,13 +315,13 @@
       display-name = "Nav";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp MR_ROT &kp MR_CT  &kp MR_PRT &kp MR_NXT XXXXXX         XXXXXX     &kp MR_ZO  XXXXXX     &kp MR_ZI  XXXXXX     ______
+            XXXXXX     &kp MR_ROT &kp MR_CT  &kp MR_PRT &kp MR_NXT XXXXXX         XXXXXX     &kp MR_ZO  XXXXXX     &kp MR_ZI  XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  XXXXXX     ______
+            XXXXXX     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  ______     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SDK XXXXXX         MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     ______
+            XXXXXX     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SDK XXXXXX         MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -332,13 +332,13 @@
       display-name = "Func";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            ______     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp F1     &kp F2     &kp F3     &kp F4     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            XXXXXX     &kp F1     &kp F2     &kp F3     &kp F4     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp F5     &kp F6     &kp F7     &kp F8     XXXXXX         XXXXXX     &kp MR_EMJ XXXXXX     XXXXXX     &kp MR_LCK ______
+            XXXXXX     &kp F5     &kp F6     &kp F7     &kp F8     XXXXXX         XXXXXX     &kp MR_EMJ XXXXXX     XXXXXX     &kp MR_LCK XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp F9     &kp F10    &kp F11    &kp F12    XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     ______
+            XXXXXX     &kp F9     &kp F10    &kp F11    &kp F12    XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
@@ -349,13 +349,13 @@
       display-name = "Sym";
       bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-            ______     ______     ______     ______     ______     ______         ______     ______     ______     ______     ______     ______
+            XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX         XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp LBRC   &kp RBRC   &kp CARET   ______
+            XXXXXX     XXXXXX     &kp N1     &kp N2     &kp N3     XXXXXX         XXXXXX     &kp EXCL   &kp LBRC   &kp RBRC   &kp CARET   XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     HRM_L(N0,  N4,        N5,        N6)        &kp AT         &kp PLUS   HRM_R(EQUAL,LPAR,     RPAR,      MINUS)     ______
+            XXXXXX     HRM_L(N0,  N4,        N5,        N6)        &kp AT         &kp PLUS   HRM_R(EQUAL,LPAR,     RPAR,      MINUS)     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            ______     &kp TILD   &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp PRCNT  &kp LBKT   &kp RBKT   &kp BSLH   ______
+            XXXXXX     &kp TILD   &kp N7     &kp N8     &kp N9     XXXXXX         XXXXXX     &kp PRCNT  &kp LBKT   &kp RBKT   &kp BSLH   XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
