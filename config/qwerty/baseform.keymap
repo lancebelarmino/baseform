@@ -135,7 +135,7 @@
       bindings = <&kp MR_F>;
     };
 
-    combo_sd {
+    combo_as {
       timeout-ms = <50>;
       key-positions = <25 26>;  // A S
       bindings = <&kp MR_SA>;
