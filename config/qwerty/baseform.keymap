@@ -138,7 +138,7 @@
     combo_as {
       timeout-ms = <50>;
       key-positions = <25 26>;  // A S
-      bindings = <&kp MR_SA>;
+      bindings = <&kp RET>;
     };
     
     combo_sd {
@@ -156,7 +156,7 @@
     combo_sf {
       timeout-ms = <50>;
       key-positions = <26 28>;  // S F
-      bindings = <&kp RET>;
+      bindings = <&kp MR_SA>;
     };
     
     combo_xc {
