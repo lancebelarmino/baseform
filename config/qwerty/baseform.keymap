@@ -17,7 +17,7 @@
 #define ______ &trans
 #define HRM_L(k1, k2, k3, k4) &htl LCTRL k1 &htl LALT k2   &htl LSHIFT k3 &htl LGUI k4
 #define HRM_R(k1, k2, k3, k4) &htr LGUI k1  &htr LSHIFT k2 &htr RALT k3   &htr LCTRL k4
-#define TBL_1 &key_repeat
+#define TBL_1 &kp SPACE
 #define TBL_2 &lt NAV ESC
 #define TBL_3 &mt LC(LALT) SPACE
 #define TBR_1 &lt FUN RET
@@ -328,7 +328,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
             XXXXXX     &kp LCTRL  &kp LALT   &kp LSHFT  &kp LGUI   XXXXXX         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  ______     XXXXXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-            XXXXXX     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SDK XXXXXX         MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     XXXXXX
+            XXXXXX     &kp MR_MC  &kp MR_MCP &kp MR_MCN &kp MR_SDK KC_F3          MSC_LEFT   MSC_DOWN   MSC_UP     MSC_RIGHT  XXXXXX     XXXXXX
         //╰──────────┴──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────┴──────────╯
                                              ______     ______     ______         ______     ______     ______
         //                                 ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
